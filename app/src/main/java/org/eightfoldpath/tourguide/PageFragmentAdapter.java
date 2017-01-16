@@ -1,9 +1,12 @@
 package org.eightfoldpath.tourguide;
 
+import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.util.Log;
+
+import static java.security.AccessController.getContext;
 
 /**
  * A simple pager adapter that represents 5 ScreenSlidePageFragment objects, in
@@ -12,8 +15,7 @@ import android.util.Log;
 public class PageFragmentAdapter extends FragmentPagerAdapter {
 
     final int PAGE_COUNT = 4;
-
-    private String[] tabTitles = new String[] {String.getString(R.string.activities), "Dining", "Events", "Parks"};
+    private String[] tabTitles = null;
 
     public PageFragmentAdapter(FragmentManager fm) {
         super(fm);
@@ -39,6 +41,10 @@ public class PageFragmentAdapter extends FragmentPagerAdapter {
     @Override
     public int getCount() {
         return PAGE_COUNT;
+    }
+
+    public void setTabTitles(String[] tabTitles) {
+        this.tabTitles = tabTitles;
     }
 
     @Override

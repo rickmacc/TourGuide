@@ -20,6 +20,11 @@ public class MainActivity extends AppCompatActivity {
         // Create an adapter that knows which fragment should be shown on each page
         PageFragmentAdapter adapter = new PageFragmentAdapter(getSupportFragmentManager());
 
+        adapter.setTabTitles(new String[] {getApplicationContext().getResources().getString(R.string.activities),
+                getApplicationContext().getResources().getString(R.string.dining),
+                getApplicationContext().getResources().getString(R.string.events),
+                getApplicationContext().getResources().getString(R.string.parks)});
+
         // Set the adapter onto the view pager
         viewPager.setAdapter(adapter);
 
