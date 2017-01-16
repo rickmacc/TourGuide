@@ -5,7 +5,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 /**
  * Created by rick on 1/16/17.
@@ -15,20 +18,19 @@ public class ParksFragment extends Fragment {
        @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        /*
-        ViewGroup rootView = (ViewGroup) inflater.inflate(
-                R.layout.fragment_page, container, false);
+           View rootView = inflater.inflate(R.layout.item_list, container, false);
 
-        TextView textView = (TextView) rootView.findViewById(R.id.page_text);
+           final ArrayList<ListItem> items = new ArrayList<ListItem>();
+           items.add(new ListItem(R.drawable.ic_nature_white_36dp, "Parks 1"));
+           items.add(new ListItem(R.drawable.ic_nature_white_36dp, "Parks 2"));
 
-        return rootView;
-        */
+           ListItemAdapter itemAdapter = new ListItemAdapter(getActivity(), items, R.color.colorActivities);
 
-           TextView textView = (TextView) inflater.inflate(
-                   R.layout.fragment_page, container, false);
-           textView.setText("Parks");
+           ListView listView = (ListView) rootView.findViewById(R.id.item_list);
+           listView.setAdapter(itemAdapter);
 
-        return textView;
+           return rootView;
+
     }
 
 }
