@@ -1,4 +1,7 @@
 <resources>
-    <string name="app_name">TourGuide</string>
-    <string name="lorem_ipsum">Lorem Ipsum</string>
+    <string name="app_name">Atlanta Tour Guide</string>
+    <string name="activities">Activities</string>
+    <string name="dining">Dining</string>
+    <string name="events">Events</string>
+    <string name="Parks">Parks</string>
 </resources>

@@ -8,4 +8,15 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="TabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabBackground">@color/colorPrimary</item>
+        <item name="tabIndicatorColor">@color/tabColorPrimary</item>
+        <item name="tabSelectedTextColor">@color/tabColorPrimary</item>
+        <item name="android:textAppearance">@style/TabTextAppearance</item>
+    </style>
+
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@color/tabColorSecondary</item>
+    </style>
+
 </resources>

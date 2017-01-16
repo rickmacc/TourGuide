@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/content"
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/page_text"
+    style="?android:textAppearanceMedium"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="wrap_content"
+    android:lineSpacingMultiplier="1.2"
+    android:padding="16dp" />
 
-    <TextView style="?android:textAppearanceMedium"
-        android:padding="16dp"
-        android:lineSpacingMultiplier="1.2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/lorem_ipsum" />
-
-</ScrollView>
