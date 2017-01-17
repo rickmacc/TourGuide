@@ -1,17 +1,10 @@
 package org.eightfoldpath.tourguide;
 
-import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.util.Log;
 
-import static java.security.AccessController.getContext;
-
-/**
- * A simple pager adapter that represents 5 ScreenSlidePageFragment objects, in
- * sequence.
- */
 public class PageFragmentAdapter extends FragmentPagerAdapter {
 
     final int PAGE_COUNT = 4;

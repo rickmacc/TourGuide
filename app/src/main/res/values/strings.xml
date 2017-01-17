@@ -4,4 +4,19 @@
     <string name="dining">Dining</string>
     <string name="events">Events</string>
     <string name="parks">Parks</string>
+    <string name="activity_beltline">Atlanta Beltline</string>
+    <string name="activity_aquarium">Georgia Aquarium</string>
+    <string name="activity_coke_museum">World of Coca-Cola</string>
+    <string name="centennial_olympic_park">Centennial Olympic Park</string>
+    <string name="dining_bistro_niko">Bistro Niko</string>
+    <string name="dining_south_city_kitchen">South City Kitchen</string>
+    <string name="dining_staplehouse">Staplehouse</string>
+    <string name="dining_einsteins">Einstein\'s</string>
+    <string name="dining_5church">5Church</string>
+    <string name="dining_buttermilk_kitchen">Buttermilk Kitchen</string>
+    <string name="dining_atlanta_fish_market">Atlanta Fish Market</string>
+    <string name="events_mlk_day">Martin Luther King Day</string>
+    <string name="events_jewish_film_festival">Jewish Film Festival</string>
+    <string name="parks_fourth_ward">Historic Fourth Ward Park</string>
+    <string name="parks_east_lake">East Lake Park</string>
 </resources>

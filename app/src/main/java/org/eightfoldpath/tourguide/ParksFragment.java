@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -15,21 +14,23 @@ import java.util.ArrayList;
  */
 
 public class ParksFragment extends Fragment {
-       @Override
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-           View rootView = inflater.inflate(R.layout.item_list, container, false);
+        View rootView = inflater.inflate(R.layout.item_list, container, false);
 
-           final ArrayList<ListItem> items = new ArrayList<ListItem>();
-           items.add(new ListItem(R.drawable.ic_nature_white_36dp, "Parks 1"));
-           items.add(new ListItem(R.drawable.ic_nature_white_36dp, "Parks 2"));
+        final ArrayList<ListItem> items = new ArrayList<ListItem>();
+        items.add(new ListItem(R.drawable.fourth_ward_park,
+                getContext().getResources().getString(R.string.parks_fourth_ward)));
+        items.add(new ListItem(R.drawable.east_lake_park,
+                getContext().getResources().getString(R.string.parks_east_lake)));
 
-           ListItemAdapter itemAdapter = new ListItemAdapter(getActivity(), items, R.color.colorActivities);
+        ListItemAdapter itemAdapter = new ListItemAdapter(getActivity(), items, R.color.colorActivities);
 
-           ListView listView = (ListView) rootView.findViewById(R.id.item_list);
-           listView.setAdapter(itemAdapter);
+        ListView listView = (ListView) rootView.findViewById(R.id.item_list);
+        listView.setAdapter(itemAdapter);
 
-           return rootView;
+        return rootView;
 
     }
 

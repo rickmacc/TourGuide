@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -21,8 +20,20 @@ public class DiningFragment extends Fragment {
            View rootView = inflater.inflate(R.layout.item_list, container, false);
 
            final ArrayList<ListItem> items = new ArrayList<ListItem>();
-           items.add(new ListItem(R.drawable.ic_local_dining_white_36dp, "Dining 1"));
-           items.add(new ListItem(R.drawable.ic_local_dining_white_36dp, "Dining 2"));
+           items.add(new ListItem(R.drawable.bistro_niko,
+                   getContext().getResources().getString(R.string.dining_bistro_niko)));
+           items.add(new ListItem(R.drawable.south_city_kitchen,
+                   getContext().getResources().getString(R.string.dining_south_city_kitchen)));
+           items.add(new ListItem(R.drawable.staplehouse,
+                   getContext().getResources().getString(R.string.dining_staplehouse)));
+           items.add(new ListItem(R.drawable.einsteins,
+                   getContext().getResources().getString(R.string.dining_einsteins)));
+           items.add(new ListItem(R.drawable.fivechurch,
+                   getContext().getResources().getString(R.string.dining_5church)));
+           items.add(new ListItem(R.drawable.buttermilk_kitchen,
+                   getContext().getResources().getString(R.string.dining_buttermilk_kitchen)));
+           items.add(new ListItem(R.drawable.atlanta_fish_market,
+                   getContext().getResources().getString(R.string.dining_atlanta_fish_market)));
 
            ListItemAdapter itemAdapter = new ListItemAdapter(getActivity(), items, R.color.colorActivities);
 
